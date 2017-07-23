@@ -10,3 +10,7 @@ CREATE TABLE IF NOT EXISTS car_models
  year integer NOT NULL,
  PRIMARY KEY (id)
 )
+
+CREATE INDEX LAMB ON car_models (make_code);
+
+CREATE INDEX YEAR ON car_models ( year );
