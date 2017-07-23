@@ -8,9 +8,12 @@ SELECT DISTINCT make_title FROM car_models WHERE make_code = 'LAM';
 --Run a query to list all model_title values where the make_code is 'NISSAN', and the model_code is 'GT-R' without any duplicate rows, and note the time somewhere. (should have 1 result)
 
 SELECT DISTINCT model_title FROM car_models WHERE make_code = 'NISSAN' AND model_code = 'GT-R';
+--23.684ms
 
 --Run a query to list all make_code, model_code, model_title, and year from car_models where the make_code is 'LAM', and note the time somewhere. (should have 1360 rows)
 
+SELECT make_code, model_code, model_title, year FROM car_models WHERE make_code ='LAM';
+--25.861ms
 
 --Run a query to list all fields from all car_models in years between 2010 and 2015, and note the time somewhere (should have 78840 rows)
 
