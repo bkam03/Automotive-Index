@@ -17,5 +17,6 @@ SELECT make_code, model_code, model_title, year FROM car_models WHERE make_code 
 
 --Run a query to list all fields from all car_models in years between 2010 and 2015, and note the time somewhere (should have 78840 rows)
 
+SELECT * FROM car_models WHERE year >= 2010 AND year <= 2015;
 
 --Run a query to list all fields from all car_models in the year of 2010, and note the time somewhere (should have 13140 rows)
